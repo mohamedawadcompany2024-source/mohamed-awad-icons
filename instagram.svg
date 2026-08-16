@@ -1,0 +1,30 @@
+<svg xmlns="http://w3.org" viewBox="0 0 48 48" width="25" height="25">
+  <defs>
+    <!-- تدرج مكعب الكاميرا لإعطاء شكل معدني أبيض بارز -->
+    <linearGradient id="ig3dBase" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#F7FAFC" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="ig3dShadow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A0AEC0" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#718096" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- ظل البروز السفلي ثلاثي الأبعاد -->
+  <ellipse cx="24" cy="43" rx="17" ry="2.5" fill="url(#ig3dShadow)" />
+
+  <!-- هيكل الكاميرا المربع الدائري المجسم -->
+  <rect x="7" y="6" width="34" height="34" rx="10" fill="url(#ig3dBase)" stroke="#E2E8F0" stroke-width="0.5" />
+  <!-- حافة لمعة الإضاءة على الحواف العلوية للمكعب -->
+  <path d="M9 11c3-3 12-4 22-2" fill="none" stroke="#FFFFFF" stroke-width="1.5" opacity="0.7" stroke-linecap="round" />
+
+  <!-- تفاصيل الكاميرا الداخلية المحفورة بلون متباين ليبرز المجسم -->
+  <!-- الإطار المربع الداخلي -->
+  <rect x="13" y="12" width="22" height="22" rx="6" fill="none" stroke="#0f7bf7" stroke-width="2.5" />
+  <!-- عدسة الكاميرا الدائرية المركزية -->
+  <circle cx="24" cy="23" r="5" fill="none" stroke="#0f7bf7" stroke-width="2.5" />
+  <!-- فلاش الكاميرا الصغير في الزاوية -->
+  <circle cx="31.5" cy="15.5" r="1.2" fill="#0f7bf7" />
+</svg>
